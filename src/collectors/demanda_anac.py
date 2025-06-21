@@ -21,7 +21,7 @@ tabela_pivot = agrupado.pivot(index='AEROPORTO DE DESTINO (NOME)', columns='MÊS
 destinos_mais_movimentados = (
     df.groupby('AEROPORTO DE DESTINO (SIGLA)')['PASSAGEIROS PAGOS'].sum()
     .sort_values(ascending=False)
-    .head(3)
+    .head(10)
 )
 
 icao_to_iata = {
