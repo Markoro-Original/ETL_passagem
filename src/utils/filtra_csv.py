@@ -1,8 +1,8 @@
 import pandas as pd
 
 for ano in range(2000, 2026):
-    input_path = f"data/raw/anac/bruto/resumo_anual_{ano}.csv"
-    output_path = f"data/raw/anac/filtrado/resumo_anual_{ano}_filtrado.csv"
+    input_path = f"data/raw/anac/resumo_anual_{ano}.csv"
+    output_path = f"data/clean/anac/resumo_anual_{ano}_filtrado.csv"
     
     df = pd.read_csv(input_path, sep=';', encoding='ISO-8859-1')
     
